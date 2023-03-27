@@ -40,7 +40,7 @@ public class Person {
 
     }
     @Override
-    public void display() {
+    public void display(){
         super.display();
         System.out.printf(",roll = %s", roll);
     }
