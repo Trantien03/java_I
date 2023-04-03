@@ -6,7 +6,7 @@ public class Circle extends Shape implements IColor {
 
     float radius;
 
-    public Circle() {
+    public Circle(){
     }
 
     public Circle(float radius) {

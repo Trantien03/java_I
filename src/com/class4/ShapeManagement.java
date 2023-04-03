@@ -54,7 +54,7 @@ public class ShapeManagement {
         list.add( newShape );
     }
 
-    public void dislayAll() {
+    public void dislayAll(){
         for (Shape item : list) {
             //display method of Shape class
             item.display();

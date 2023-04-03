@@ -2,7 +2,7 @@ package com.class4;
 
 import java.util.Scanner;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape{
     float a;
     float b;
     float c;

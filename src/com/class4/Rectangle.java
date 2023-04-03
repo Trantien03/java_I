@@ -7,7 +7,7 @@ public class Rectangle extends Shape {
     float width;
     float length;
 
-    Rectangle() {
+    Rectangle(){
 
     }
 

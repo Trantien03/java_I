@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.RecursiveAction;
 
-public class MainClass {
+public class MainClass{
 
     //Overload method
     public int sum(int a, int b) {

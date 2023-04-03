@@ -1,6 +1,6 @@
 package com.class4;
 
-public abstract class Shape {
+public abstract class Shape{
     String color;
     int id;
 
