@@ -2,7 +2,7 @@ package com.staff;
 
 import java.util.Scanner;
 
-public class Employee extends Staff {
+public class Employee extends Staff{
     String skill;
 
     @Override
