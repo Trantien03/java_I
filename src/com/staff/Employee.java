@@ -24,7 +24,7 @@ public class Employee extends Staff{
     }
 
     @Override
-    public void display() {
+    public void display(){
         System.out.println("This is Employee");
         System.out.println("Skill " + this.skill);
     }
