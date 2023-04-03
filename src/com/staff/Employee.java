@@ -11,7 +11,7 @@ public class Employee extends Staff{
     }
 
     @Override
-    public void inputData() {
+    public void inputData(){
         System.out.print("Enter name: ");
         Scanner input = new Scanner(System.in);
         this.name = input.nextLine();
