@@ -16,6 +16,10 @@ public class Rectangle extends Shape {
         System.out.print("Nhap chieu rong: ");
         b = Integer.parseInt(scanner.nextLine());
     }
+    public void display(){
+        System.out.println("Chieu dai:" + this.a);
+        System.out.println("Chieu rong:" + this.b);
+    }
 
     public float getArea() {
         double area = a * b;

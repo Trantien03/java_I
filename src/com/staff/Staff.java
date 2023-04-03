@@ -8,7 +8,8 @@ public abstract class Staff {
     int salary;
 
     //set Salary
-    public void setSalary(int sal) {
+    public void setSalary(int sal)
+    {
         this.salary = sal;
     }
 

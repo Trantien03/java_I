@@ -20,6 +20,11 @@ import java.util.Scanner;
             System.out.print("Nhap do dai canh c: ");
             c = Integer.parseInt(scanner.nextLine());
         }
+        public void display(){
+            System.out.println("Canh a:" + this.a);
+            System.out.println("Canh b:" + this.b);
+            System.out.println("Canh c:" + this.c);
+        }
 
         public float getArea() {
             double p = (a + b + c) / 2;

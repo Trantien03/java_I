@@ -14,6 +14,10 @@ import java.util.Scanner;
         System.out.print("Nhap ban kinh: ");
         radius = Integer.parseInt(scanner.nextLine());
     }
+    public void display(){
+        System.out.println("Ban Kinh:" + this.radius);
+
+    }
 
     public float getArea() {
         double area = Math.PI * radius * radius;
