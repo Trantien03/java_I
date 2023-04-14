@@ -11,7 +11,7 @@ public class Director extends Person{
         return role;
     }
     @Override
-     public void input(){
+     public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter name: ");
         name = scanner.nextLine();

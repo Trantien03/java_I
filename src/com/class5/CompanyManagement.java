@@ -8,7 +8,7 @@ public class CompanyManagement {
 
     private static List<Person> list = new ArrayList<Person>();
     private static Person person;
-    public void runMainMenu() {
+    public void runMainMenu(){
 
         Scanner scanner = new Scanner(System.in);
 

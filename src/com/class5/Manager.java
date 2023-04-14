@@ -9,7 +9,7 @@ public class Manager extends Person {
         super();
     }
 
-    public String getDepartment() {
+    public String getDepartment(){
         return department;
     }
 

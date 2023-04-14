@@ -34,7 +34,7 @@ public class Employee extends Person {
     }
 
     @Override
-    public void updatePerson() {
+    public void updatePerson(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Update name: ");
         name = scanner.nextLine();

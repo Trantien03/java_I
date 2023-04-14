@@ -5,7 +5,7 @@ import com.class5.Employee;
 import com.class5.Manager;
 import com.class5.Person;
 
-public class MainClass {
+public class MainClass{
 
     public static void main(String[] args) {
 

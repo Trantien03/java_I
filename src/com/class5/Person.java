@@ -2,7 +2,7 @@ package com.class5;
 
 import java.util.Scanner;
 
-public abstract class Person {
+public abstract class Person{
     private static int count = 0;
     int id;
     String name;
@@ -21,7 +21,7 @@ public abstract class Person {
     public double getBonus(){
         return bonus;
     }
-    public double getSalary() {
+    public double getSalary(){
         return bonus * salary + salary;
     }
     public abstract void display();
