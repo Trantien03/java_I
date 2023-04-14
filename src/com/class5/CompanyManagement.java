@@ -172,7 +172,7 @@ public class CompanyManagement {
             if (result != null) {
                 System.out.print("Found a result: ");
                 result.display();
-                result.updataSalary();
+                result.updataNewSalary();
             } else {
                 System.out.println("No result is found!");
             }

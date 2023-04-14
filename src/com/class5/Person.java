@@ -27,7 +27,7 @@ public abstract class Person{
     public abstract void display();
     public abstract void input();
     public abstract void updatePerson();
-    public void updataSalary(){
+    public void updataNewSalary(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("New salary update:");
         salary = Double.parseDouble(scanner.nextLine());
