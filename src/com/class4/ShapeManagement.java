@@ -50,11 +50,17 @@ public class ShapeManagement {
         }
 
         newShape.setId(++currentId);
-        newShape.inputData();
-        list.add( newShape );
+
+        boolean bCheck = newShape.inputData();
+        if( bCheck ) {
+            list.add( newShape );
+        } else  {
+            System.out.println("Something wrong, can not create new Shape");
+        }
+
     }
 
-    public void dislayAll(){
+    public void dislayAll() {
         for (Shape item : list) {
             //display method of Shape class
             item.display();

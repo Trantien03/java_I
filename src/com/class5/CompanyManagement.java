@@ -12,9 +12,9 @@ public class CompanyManagement {
 
         Scanner scanner = new Scanner(System.in);
 
-        mainMenuLoop: while (true) {
-            System.out.println();
-            System.out.println("==> Welcome to company management <==");
+        mainMenuLoop:
+        while (true) {
+            System.out.println("=====> Welcome to company management <=====");
             System.out.println("1. Create new personnel");
             System.out.println("2. Show all personnel");
             System.out.println("3. Search for personnel by id");
@@ -28,16 +28,16 @@ public class CompanyManagement {
                     createNewPerson();
                 }
                 case 2 -> {
-                    displayAllPeople();
+                    displayAll();
                 }
                 case 3 -> {
-                    findPerson();
+                    findPersonById();
                 }
                 case 4 -> {
                     updatePerson();
                 }
                 case 5 -> {
-                    checkSalary();
+                    getTotalBonusOfCompany();
                 }
                 case 6 -> {
                     updateSalary();
@@ -48,12 +48,11 @@ public class CompanyManagement {
             }
         }
     }
-
     public void createNewPerson() {
         Scanner scanner = new Scanner(System.in);
         createNewPersonLoop: while (true) {
             System.out.println();
-            System.out.println("==> Create new personnel <==");
+            System.out.println("=====> Create new personnel <=====");
             System.out.println("1. Director");
             System.out.println("2. Manager");
             System.out.println("3. Employee");
@@ -66,27 +65,27 @@ public class CompanyManagement {
                 case 2 -> {
                     person = new Manager();
                 }
-                case 3 -> {
+                case 3 ->{
                     person = new Employee();
-                }
-                case 4 -> {
-                    break createNewPersonLoop;
-                }
             }
+            case 4 -> {
+                break createNewPersonLoop;
+            }
+        }
             person.input();
             list.add(person);
         }
 
     }
 
-    public void displayAllPeople() {
+    public void displayAll() {
         System.out.println("Showing " + list.size() + " Personnel...");
         for (Person person : list) {
             person.display();
         }
     }
 
-    public void findPerson() {
+    public void findPersonById() {
         Scanner scanner = new Scanner(System.in);
         findPersonLoop: while (true) {
             System.out.println();
@@ -120,7 +119,6 @@ public class CompanyManagement {
     public void updatePerson() {
         Scanner scanner = new Scanner(System.in);
         findPersonLoop: while (true) {
-            System.out.println();
             int id;
             System.out.print("Enter the id of the person you want to search for: ");
             try {
@@ -139,7 +137,7 @@ public class CompanyManagement {
         }
     }
 
-    public void checkSalary() {
+    public void getTotalBonusOfCompany() {
         Scanner scanner = new Scanner(System.in);
         findPersonLoop: while (true) {
             System.out.println();
@@ -163,7 +161,6 @@ public class CompanyManagement {
     public void updateSalary() {
         Scanner scanner = new Scanner(System.in);
         findPersonLoop: while (true) {
-            System.out.println();
             int id;
             System.out.print("Enter the id of the person you want to search for: ");
             try {

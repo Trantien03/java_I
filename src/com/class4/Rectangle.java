@@ -7,7 +7,7 @@ public class Rectangle extends Shape {
     float width;
     float length;
 
-    Rectangle(){
+    Rectangle() {
 
     }
 
@@ -17,16 +17,30 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public void inputData() {
+    public boolean inputData() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter length : " );
-        this.length = input.nextFloat();
+        try {
+            System.out.print("Enter length : " );
+            String sLength = input.nextLine();
 
-        System.out.print("Enter width : " );
-        this.width = input.nextFloat();
+            this.length = Float.parseFloat(sLength);
 
-        System.out.println("Set length = " + this.length);
-        System.out.println("Set width = " + this.width);
+            System.out.print("Enter width : " );
+            String sWidth = input.nextLine();
+
+            this.width = Float.parseFloat(sWidth);
+
+            System.out.println("Set length = " + this.length);
+            System.out.println("Set width = " + this.width);
+
+            return true;
+
+        } catch(Exception e) {
+            System.out.println("Wrong format, try again");
+            //return false;
+        }
+
+        return false;
     }
 
     @Override

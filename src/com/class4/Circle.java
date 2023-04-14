@@ -6,7 +6,7 @@ public class Circle extends Shape implements IColor {
 
     float radius;
 
-    public Circle(){
+    public Circle() {
     }
 
     public Circle(float radius) {
@@ -24,11 +24,26 @@ public class Circle extends Shape implements IColor {
     }
 
     @Override
-    public void inputData() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter radius : " );
-        this.radius = input.nextFloat();
-        System.out.println("Set radius = " + this.radius);
+    public boolean inputData() {
+        try {
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter radius : " );
+            String sRadius = input.nextLine();
+
+            this.radius = Float.parseFloat(sRadius);
+
+            if(this.radius < 0) {
+                return false;
+            }
+
+            System.out.println("Set radius = " + this.radius);
+
+            return true;
+        } catch(Exception e) {
+            System.out.println("");
+        }
+
+        return false;
     }
 
     @Override

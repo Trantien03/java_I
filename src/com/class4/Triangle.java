@@ -2,7 +2,7 @@ package com.class4;
 
 import java.util.Scanner;
 
-public class Triangle extends Shape{
+public class Triangle extends Shape {
     float a;
     float b;
     float c;
@@ -28,7 +28,7 @@ public class Triangle extends Shape{
     }
 
     @Override
-    public void inputData() {
+    public boolean inputData() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a : " );
         this.a = input.nextFloat();
@@ -38,6 +38,8 @@ public class Triangle extends Shape{
 
         System.out.print("Enter b : " );
         this.c = input.nextFloat();
+
+        return true;
     }
 
     @Override

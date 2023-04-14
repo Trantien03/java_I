@@ -1,6 +1,6 @@
 package com.class4;
 
-public abstract class Shape{
+public abstract class Shape {
     String color;
     int id;
 
@@ -8,7 +8,7 @@ public abstract class Shape{
 
     public abstract float getPerimeter();
 
-    public abstract void inputData();
+    public abstract boolean inputData();
 
     public abstract void display();
 
